@@ -1,0 +1,37 @@
+{
+  "name": "prompt-thumbnail-picker",
+  "displayName": "Prompt Thumbnail Picker",
+  "description": "Thumbnail based prompt picker",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "promptThumbnailPicker.open",
+        "title": "Prompt Thumbnail Picker: Open"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "promptThumbnailPicker.open",
+        "key": "ctrl+alt+p"
+      }
+    ]
+  },
+  "configuration": {
+      "title": "Prompt Thumbnail Picker",
+      "properties": {
+          "promptThumbnailPicker.tsvPath": {
+              "type": "string",
+              "default": "prompts.tsv",
+              "description": "Workspaceからのprompts.tsv相対パス"
+          }
+      }
+  }
+}
