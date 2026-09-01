@@ -161,7 +161,11 @@ Python ファイル等、Prompt を挿入したいエディタを開きます。
 その状態で以下を実行します。
 
 ```text
+## Windows
 Ctrl + Alt + P
+
+## Mac
+control + alt(option) + P
 ```
 
 Prompt Picker が右側に表示されます。
